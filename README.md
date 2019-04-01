@@ -5,6 +5,7 @@
 ### Prerequisites
 
 Node 8.9+
+
 npm 5.6.0
 
 ### Setup & Run
@@ -20,6 +21,7 @@ npm t
 ```
 
 UI tests can be executed separately using `npm run test:ui`
+
 API tests can be executed separately using `npm run test:api`
 
 ### Issues

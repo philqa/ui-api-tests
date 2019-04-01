@@ -4,9 +4,8 @@
 
 ### Prerequisites
 
-Node 8.9+
-
-npm 5.6.0
+- Node 8.9+
+- npm 5.6.0
 
 ### Setup & Run
 

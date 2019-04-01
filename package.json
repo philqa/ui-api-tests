@@ -1,0 +1,33 @@
+{
+  "name": "technical-assessment",
+  "version": "1.0.0",
+  "description": "Automated UI tests for a technical assessment",
+  "author": {
+    "name": "Phil Hicks"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "npm run test:api && npm run test:ui",
+    "test:ui": "tsc && codeceptjs run -c tests/ui/ --steps --reporter mocha-multi",
+    "test:api": "mocha -r ts-node/register tests/api/*.spec.ts --timeout 3000 --recursive --colors"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/request": "^2.48.1",
+    "assert": "^1.4.1",
+    "chai": "^4.2.0",
+    "codeceptjs": "^2.0.3",
+    "mocha": "^5.0.2",
+    "mocha-junit-reporter": "^1.18.0",
+    "mocha-multi": "^1.0.1",
+    "mochawesome": "^3.1.1",
+    "puppeteer": "^1.11.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}

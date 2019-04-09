@@ -1,4 +1,10 @@
-# Technical Assessment
+# Typescript UI & API Tests
+
+## Overview
+
+UI tests showcasing CodeceptJS, Puppeteer, Headless Chrome, Parallel test execution, Tags and both Mocha Spec and Cucumber support with Page Objects, Common/Reusable Steps and Object Repository patterns.
+
+API tests showcasing a clean and lightweight approach using Mocha Specs and RequestJS with chai for assertions.
 
 ## Running Instructions
 

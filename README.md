@@ -12,6 +12,9 @@ npm 5.6.0
 UI tests have been implemented with CodeceptJS + Puppeteer. By default they'll run headlessly 
 using chrome and HTML reports will be generated in `/reports/mochawesome.html`
 
+Cucumber support has also been added along with a common/generic steps, object repository and page object 
+pattern approach.
+
 API tests have been implemented using Mocha + RequestJS with chai for assertions.
 
 ```
@@ -19,7 +22,9 @@ npm i
 npm t
 ```
 
-UI tests can be executed separately using `npm run test:ui`
+CodeceptJS Mocha UI tests can be executed separately using `npm run test:ui`
+CodeceptJS Cucumber tests can be executed using `npm run test:ui:cuke`
+CodeceptJS Parallel tests can be executed using `npm run test:ui:parallel`
 API tests can be executed separately using `npm run test:api`
 
 ### Issues

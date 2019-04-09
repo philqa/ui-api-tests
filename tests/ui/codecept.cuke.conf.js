@@ -1,6 +1,5 @@
 exports.config = {
-    tests: './specs/*.spec.ts',
-    output: '../../reports',
+    output: '../../reports/cuke',
     timeout: 30000,
     helpers: {
         Puppeteer: {
@@ -20,15 +19,15 @@ exports.config = {
                 }
             },
             'mocha-junit-reporter': {
-                stdout: './reports/junit-console.log',
+                stdout: './reports/cuke/junit-console.log',
                 options: {
-                    mochaFile: './reports/result.xml'
+                    mochaFile: './reports/cuke/result.xml'
                 }
             },
             'mochawesome': {
-                stdout: './reports/console.log',
+                stdout: './reports/cuke/console.log',
                 options: {
-                    reportDir: './reports',
+                    reportDir: './reports/cuke',
                     reportFilename: 'mochawesome'
                 }
             }
@@ -37,11 +36,11 @@ exports.config = {
     require: [
         'ts-node/register'
     ],
-    multiple: {
-        parallel: {
-            chunks: 4,
-            browsers: ['chrome']
-        }
+    gherkin: {
+        features: './features/*.feature',
+        steps: [
+            './step_definitions/personal-home-loan-calc.steps.ts'
+        ]
     },
     bootstrap: false,
     hooks: [],

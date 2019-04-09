@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "test": "npm run test:api && npm run test:ui",
-    "test:ui": "tsc && codeceptjs run -c tests/ui/ --steps --reporter mocha-multi",
+    "test:ui": "codeceptjs run -c tests/ui/ --steps --reporter mocha-multi",
+    "test:ui:cuke": "codeceptjs run -c tests/ui/codecept.cuke.conf.js --steps --features --reporter mocha-multi --grep @automated",
+    "test:parallel": "codeceptjs run-multiple parallel -c tests/ui/ --steps --reporter mocha-multi --grep @parallel",
     "test:api": "mocha -r ts-node/register tests/api/*.spec.ts --timeout 3000 --recursive --colors"
   },
   "devDependencies": {

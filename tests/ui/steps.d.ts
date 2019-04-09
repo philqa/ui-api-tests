@@ -113,6 +113,12 @@ declare function BeforeSuite(callback: ICodeceptCallback): void;
 declare function After(callback: ICodeceptCallback): void;
 declare function AfterSuite(callback: ICodeceptCallback): void;
 
+declare function Given(): void;
+declare function Given(text: any, element: any): void;
+declare function When(element: any): void;
+declare function When(text: any, element: any): void;
+declare function Then(text: any, element: any): void;
+
 declare function locate(selector: string): Locator;
 declare function locate(selector: ILocator): Locator;
 declare function within(selector: string, callback: Function): Promise<any>;

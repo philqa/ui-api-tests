@@ -47,13 +47,13 @@ npm i -g tsc
 npm i -g mocha
 ```
 
-### Answers to the questions
+### Questions
 
 1. What other possible scenario would you suggest for given page? Suggest 3-5 with
 your suggestion.
 ```
 - Submitting the form without filling out the required fields and confirming the error
-- Adding more user profile scenarios (e.g. Joint, No. of deps 5+, Residential Investment)
+- Adding more user profile scenarios (e.g. Joint, No. of deps 5+, Residential Investment), could be added as a Scenario Outline/Example Table
 - Field validation (cannot enter special chars, letters, $ max rewrite to 9,999,999)
 - Tooltips element/content checks
 - Using an accessibility library/test framework
@@ -63,7 +63,7 @@ particular flow?
 ```
 I'd either move the specs to a new sub-folder with the flow-name (if it made sense given how 
 the specs were split) and create a new npm run script to only run this sub-folder. Or I'd 
-using @Tags to label the Feature/Scenarios and specify it in the npm run script.
+use @Tags to label the Feature/Scenarios and specify it in the npm run script.
 ```
 3. Which approaches could be used to reduce overall execution time? Describe how
 they could be implemented into your code base.

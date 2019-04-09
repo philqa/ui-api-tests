@@ -28,8 +28,6 @@ npm i
 npm t
 ```
 
-<<<<<<< HEAD
-
 Spec UI tests can be executed separately using `npm run test:ui`
 
 Cucumber UI tests can be executed using `npm run test:ui:cuke`

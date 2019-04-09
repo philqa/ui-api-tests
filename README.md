@@ -4,8 +4,8 @@
 
 ### Prerequisites
 
-Node 8.9+
-npm 5.6.0
+- Node 8.9+
+- npm 5.6.0
 
 ### Setup & Run
 
@@ -22,9 +22,14 @@ npm i
 npm t
 ```
 
-CodeceptJS Mocha UI tests can be executed separately using `npm run test:ui`
-CodeceptJS Cucumber tests can be executed using `npm run test:ui:cuke`
-CodeceptJS Parallel tests can be executed using `npm run test:ui:parallel`
+<<<<<<< HEAD
+
+Spec UI tests can be executed separately using `npm run test:ui`
+
+Cucumber UI tests can be executed using `npm run test:ui:cuke`
+
+Parallel UI tests can be executed using `npm run test:ui:parallel`
+
 API tests can be executed separately using `npm run test:api`
 
 ### Issues
